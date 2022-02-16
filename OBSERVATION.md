@@ -32,3 +32,10 @@ Things have to consider for the deploment
 * _Reference Links_
   * [Consule AWS Module](https://registry.terraform.io/modules/hashicorp/consul/aws/latest)
   * https://github.com/hashicorp/terraform-aws-consul
+
+
+## Ansible
+There are some tasks need to manage via shell like installation and management of Consule. This is where ansible comes into picture
+
+* Lets use [https://github.com/hashicorp/terraform-aws-consul](https://github.com/hashicorp/terraform-aws-consul) Consule management scripts in ansible to more easy to run
+* Since we are deploying consule(and agents) on aws, we need to manage inventory
