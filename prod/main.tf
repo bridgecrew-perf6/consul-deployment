@@ -5,18 +5,6 @@
 # nodes. Note that these templates assume that the AMI you provide via the ami_id input variable is built from
 # the examples/consul-ami/consul.json Packer template.
 # ---------------------------------------------------------------------------------------------------------------------
-
-# ----------------------------------------------------------------------------------------------------------------------
-# REQUIRE A SPECIFIC TERRAFORM VERSION OR HIGHER
-# ----------------------------------------------------------------------------------------------------------------------
-terraform {
-  # This module is now only being tested with Terraform 1.0.x. However, to make upgrading easier, we are setting
-  # 0.14.0 as the minimum version, as that version added support for validation and the alltrue function
-  # Removing the validation completely will yield a version compatible with 0.12.26 as that added support for
-  # required_providers with source URLs
-  required_version = ">= 0.14.0"
-}
-
 # ---------------------------------------------------------------------------------------------------------------------
 # AUTOMATICALLY LOOK UP THE LATEST PRE-BUILT AMI
 # This repo contains a CircleCI job that automatically builds and publishes the latest AMI by building the Packer

@@ -39,3 +39,6 @@ There are some tasks need to manage via shell like installation and management o
 
 * Lets use [https://github.com/hashicorp/terraform-aws-consul](https://github.com/hashicorp/terraform-aws-consul) Consule management scripts in ansible to more easy to run
 * Since we are deploying consule(and agents) on aws, we need to manage inventory
+  * https://aws.amazon.com/blogs/apn/getting-started-with-ansible-and-dynamic-amazon-ec2-inventory-management/
+  * https://github.com/hehachris/ec2ansible
+  * 
