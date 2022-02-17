@@ -3,36 +3,7 @@
 > Consul is a distributed, highly available, and data center aware solution to connect and > configure applications across dynamic, distributed infrastructure.
 > * [https://www.consul.io](https://www.consul.io)
 
-This repo contain terraform code and anisble playbooks to deploy and manage Consule cluster on AWS. Below is the directory structure
-```
-$ tree -L 2 .
-.
-├── ansible
-│   ├── inventories
-│   ├── main.yml
-│   ├── README.md
-│   └── roles
-├── dev
-│   ├── main.tf
-│   ├── outputs.tf
-│   ├── providers.tf
-│   └── variables.tf
-├── modules
-│   ├── consul-client-security-group-rules
-│   ├── consul-cluster
-│   ├── consul-iam-policies
-│   ├── consul-security-group-rules
-│   └── README.md
-├── prod
-│   ├── main.tf
-│   ├── outputs.tf
-│   ├── providers.tf
-│   └── variables.tf
-└── README.md
-
-10 directories, 15 files
-```
-Right now, terraform and ansible are not linked together to run ansible with terraform, but one has to run manually which steps are given in further sections
+This repo contain terraform code and anisble playbooks to deploy and manage Consule cluster on AWS. Right now, terraform and ansible are not linked together to run ansible with terraform, but one has to run manually which steps are given in further sections
 
 | Directory                        | Description                                     |
 | -------------------------------- | ----------------------------------------------- |

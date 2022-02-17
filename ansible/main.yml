@@ -1,0 +1,22 @@
+---
+# Author: Veerendra Kakumanu
+# Description:
+
+- name: Manage Consule
+  hosts: all
+  gather_facts: yes
+  vars_files:
+    - vars.yml
+
+  pre_tasks:
+    - name: Pre tasks
+      debug: Run pre tasks
+
+  post_tasks:
+    - name: Post tasks
+      debug: Run post tasks
+
+  roles:
+    - common
+    - install-consul
+    - run-consul

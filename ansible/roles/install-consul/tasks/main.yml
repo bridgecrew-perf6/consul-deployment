@@ -1,1 +1,3 @@
 ---
+- name: Run install-consule script
+  script: install-consule
